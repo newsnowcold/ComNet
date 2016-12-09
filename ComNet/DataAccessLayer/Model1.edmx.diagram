@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f5000fc410c94fd4a04fefe3ea0d1560" Name="Diagram1" >
+        <EntityTypeShape EntityType="Darrel_ComNetModel.AspNetRole" Width="1.5" PointX="0.75" PointY="4.125" />
+        <EntityTypeShape EntityType="Darrel_ComNetModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="14.875" />
+        <EntityTypeShape EntityType="Darrel_ComNetModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="2.375" />
+        <EntityTypeShape EntityType="Darrel_ComNetModel.AspNetUser" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="Darrel_ComNetModel.Company" Width="1.5" PointX="5.25" PointY="9.375" />
+        <EntityTypeShape EntityType="Darrel_ComNetModel.Status" Width="1.5" PointX="3" PointY="6.5" />
+        <EntityTypeShape EntityType="Darrel_ComNetModel.StatusType" Width="1.5" PointX="0.75" PointY="7" />
+        <EntityTypeShape EntityType="Darrel_ComNetModel.UserCompany" Width="1.5" PointX="10.5" PointY="8.5" />
+        <EntityTypeShape EntityType="Darrel_ComNetModel.UserPost" Width="1.5" PointX="7.5" PointY="8.5" />
+        <EntityTypeShape EntityType="Darrel_ComNetModel.User" Width="1.5" PointX="5.25" PointY="5.25" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_Users_AspNetUsers" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_Companies_Statuses" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_UserCompanies_Companies" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_UserPosts_Companies" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_Statuses_StatusTypes" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_UserCompanies_Statuses" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_Users_Statuses" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_UserCompanies_Users" />
+        <AssociationConnector Association="Darrel_ComNetModel.FK_UserPosts_Users" />
+        <AssociationConnector Association="Darrel_ComNetModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
